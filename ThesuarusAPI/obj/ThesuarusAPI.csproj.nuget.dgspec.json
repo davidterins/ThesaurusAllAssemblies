@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {}
+    "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/ThesuarusAPI.csproj": {}
   },
   "projects": {
-    "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {
+    "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/ThesuarusAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
+        "projectUniqueName": "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/ThesuarusAPI.csproj",
         "projectName": "ThesuarusAPI",
-        "projectPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
-        "packagesPath": "C:\\Users\\davidterins\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\obj\\",
+        "projectPath": "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/ThesuarusAPI.csproj",
+        "packagesPath": "/Users/davidterins/.nuget/packages/",
+        "outputPath": "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\davidterins\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/davidterins/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{7FF89840-E64F-437D-A61A-102F6E992238}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThesaurusConsoleClient/Program.cs">
+    <Files>
+      <File FileName="ThesuarusAPI/IThesaurus.cs" Line="14" Column="18" />
+      <File FileName="ThesuarusAPI/Thesaurus.cs" Line="18" Column="42" />
+      <File FileName="ThesuarusAPI/Controllers/ThesaurusController.cs" Line="23" Column="14" />
+      <File FileName="ThesuarusAPI/Startup.cs" Line="22" Column="6" />
+      <File FileName="ThesuarusAPI/Program.cs" Line="19" Column="44" />
+      <File FileName="ThesuarusAPI/appsettings.json" Line="1" Column="1" />
+      <File FileName="ThesuarusAPI/Properties/launchSettings.json" Line="21" Column="32" />
+      <File FileName="ThesaurusConsoleClient/Program.cs" Line="12" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ThesaurusAllAssemblies" expanded="True">
+            <Node name="ThesaurusConsoleClient" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="ThesuarusAPI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ThesuarusAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ThesaurusConsoleClient FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

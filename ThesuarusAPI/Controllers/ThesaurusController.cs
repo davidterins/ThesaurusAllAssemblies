@@ -4,43 +4,42 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Thesaurus;
 
 namespace ThesuarusAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ThesaurusController : ControllerBase
+  [Route("api/[controller]")]
+  [ApiController]
+  public class ThesaurusController : ControllerBase
+  {
+    public readonly IThesaurus thesaurusService;
+
+    public ThesaurusController(IThesaurus thesaurusService)
     {
-        // GET: api/Thesaurus
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/Thesaurus/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/Thesaurus
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT: api/Thesaurus/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+      this.thesaurusService = thesaurusService;
     }
+
+    // GET: api/Thesaurus
+    [HttpGet]
+    public IEnumerable<string> Get()
+    {
+      //var result = thesaurusService.GetWords();
+      return new string[] { "value1", "value2" };
+    }
+
+    // GET: api/Thesaurus/5
+    [HttpGet("{synonym}", Name = "Get")]
+    public IEnumerable<string> Get(string synonym)
+    {
+      //var result = thesaurusService.GetSynonyms(synonym);
+      return new string[] { "value1", "value2" };
+    }
+
+    // POST: api/Thesaurus
+    [HttpPost]
+    public void Post([FromBody] string value)
+    {
+      //thesaurusService.AddSynonyms(value);
+    }
+  }
 }
