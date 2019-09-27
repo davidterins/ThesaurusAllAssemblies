@@ -8124,28 +8124,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/davidterins/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\davidterins\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/ThesuarusAPI.csproj",
+      "projectUniqueName": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
       "projectName": "ThesuarusAPI",
-      "projectPath": "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/ThesuarusAPI.csproj",
-      "packagesPath": "/Users/davidterins/.nuget/packages/",
-      "outputPath": "/Users/davidterins/Documents/GitHub/ThesaurusAllAssemblies/ThesuarusAPI/obj/",
+      "projectPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
+      "packagesPath": "C:\\Users\\davidterins\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "/Users/davidterins/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\davidterins\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8199,7 +8197,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

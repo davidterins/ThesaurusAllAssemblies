@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {}
+    "C:\\Code\\ThesaurusAllAssemblies\\ThesaurusConsoleClient\\ThesaurusConsoleClient.csproj": {}
   },
   "projects": {
-    "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {
+    "C:\\Code\\ThesaurusAllAssemblies\\ThesaurusConsoleClient\\ThesaurusConsoleClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
-        "projectName": "ThesuarusAPI",
-        "projectPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
+        "projectUniqueName": "C:\\Code\\ThesaurusAllAssemblies\\ThesaurusConsoleClient\\ThesaurusConsoleClient.csproj",
+        "projectName": "ThesaurusConsoleClient",
+        "projectPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesaurusConsoleClient\\ThesaurusConsoleClient.csproj",
         "packagesPath": "C:\\Users\\davidterins\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\obj\\",
+        "outputPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesaurusConsoleClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\davidterins\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,26 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -68,9 +48,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
