@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {}
   },
   "projects": {
-    "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
         "projectName": "ThesuarusAPI",
-        "projectPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
-        "packagesPath": "C:\\Users\\davidterins\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\ThesaurusAllAssemblies\\ThesuarusAPI\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ThesaurusAllAssemblies\\ThesuarusAPI\\ThesuarusAPI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ThesaurusAllAssemblies\\ThesuarusAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\davidterins\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,6 +58,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

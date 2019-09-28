@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Thesaurus;
+using System.Diagnostics;
 
 namespace ThesuarusAPI.Controllers
 {
@@ -23,23 +20,23 @@ namespace ThesuarusAPI.Controllers
     [HttpGet]
     public IEnumerable<string> Get()
     {
-      //var result = thesaurusService.GetWords();
-      return new string[] { "value1", "value2" };
+      return thesaurusService.GetWords();
     }
 
-    // GET: api/Thesaurus/5
+    // GET: api/Thesaurus/synonym
     [HttpGet("{synonym}", Name = "Get")]
     public IEnumerable<string> Get(string synonym)
     {
-      //var result = thesaurusService.GetSynonyms(synonym);
-      return new string[] { "value1", "value2" };
+      return thesaurusService.GetSynonyms(synonym);
     }
 
     // POST: api/Thesaurus
     [HttpPost]
-    public void Post([FromBody] string value)
+    public void Post(IEnumerable<string> value)
     {
-      //thesaurusService.AddSynonyms(value);
+      Debug.WriteLine("post Value " + value);
+
+      thesaurusService.AddSynonyms(value);
     }
   }
 }
