@@ -1,30 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace ThesuarusAPI.Models
 {
+  /// <summary>
+  /// Represents a group of synonyms
+  /// </summary>
   public class SynonymGroup
   {
-    public SynonymGroup(int id)
+    public SynonymGroup()
     {
-      ID = id;
-      Members = new List<WordModel>();
+      Words = new List<Word>();
     }
 
-    public int ID { get; private set; }
+    /// <summary>
+    /// Primary key
+    /// </summary>
+    public int SynonymGroupID { get; set; }
 
-    public List<WordModel> Members { get; }
-
-    public void MergeInto(SynonymGroup target)
-    {
-      foreach (var wordModel in Members)
-      {
-        wordModel.SynonymGroupID = target.ID;
-      }
-
-      target.Members.AddRange(Members);
-    }
+    /// <summary>
+    /// A list of words included in the synonym group.
+    /// </summary>
+    public virtual ICollection<Word> Words { get; set; }
   }
 }

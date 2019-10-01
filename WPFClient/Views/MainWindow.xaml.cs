@@ -12,7 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CommonServiceLocator;
 using Prism.Mvvm;
+using Prism.Services.Dialogs;
+using WPFClient.ViewModels;
 
 namespace WPFClient.Views
 {
@@ -24,7 +27,6 @@ namespace WPFClient.Views
     public MainWindow()
     {
       InitializeComponent();
-      DataContext = new MainWindowViewModel();
     }
   }
 }

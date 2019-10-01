@@ -45,6 +45,10 @@
               "target": "Package",
               "version": "[5.2.7, )"
             },
+            "Prism.Unity": {
+              "target": "Package",
+              "version": "[7.2.0.1367, )"
+            },
             "Prism.Wpf": {
               "target": "Package",
               "version": "[7.2.0.1367, )"

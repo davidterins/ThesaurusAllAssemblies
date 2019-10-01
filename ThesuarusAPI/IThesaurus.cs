@@ -11,6 +11,7 @@ namespace Thesaurus
     /// </summary>
     /// <param name="synonyms">The synonyms to add.</param>
     void AddSynonyms(IEnumerable<string> synonyms);
+
     /// <summary>
     /// Gets the synonyms for a given word.
     /// </summary>
@@ -19,10 +20,10 @@ namespace Thesaurus
     /// A <see cref="IEnumerable{String}"/> of synonyms.
     /// </returns>
     IEnumerable<string> GetSynonyms(string word);
+
     /// <summary>
     /// Gets all words from the thesaurus.
     /// </summary>
-
     /// <returns>
     /// An <see cref="IEnumerable{String}"/> containing all the words in
     /// the thesaurus.

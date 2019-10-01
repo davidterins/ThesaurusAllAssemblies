@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace WPFClient
 {
+  /// <summary>
+  /// A class with methods to communicate the Thesaurus API.
+  /// </summary>
   public class ThesaurusAPIHelper
   {
-    private static string BaseURL = "https://localhost:44349/api/";
+    private static readonly string BaseURL = "https://localhost:44349/api/";
 
+    /// <summary>
+    /// Gets all the words existing in the Thesaurus API.
+    /// </summary>
     public static async Task<IEnumerable<string>> GetWordsAsync()
     {
       try
@@ -23,7 +29,10 @@ namespace WPFClient
           {
             var result = await response.Content.ReadAsAsync<IEnumerable<string>>();
 
-            return result;
+            if (result != null)
+            {
+              return result;
+            }
           }
         }
       }
@@ -33,10 +42,13 @@ namespace WPFClient
         throw;
       }
 
-      return null;
+      return new List<string>();
     }
 
-
+    /// <summary>
+    /// Gets all synonyms for the specified word from the Thesaurus API.
+    /// </summary>
+    /// <param name="word"></param>
     public static async Task<IEnumerable<string>> GetSynonymsAsync(string word)
     {
       try
@@ -46,8 +58,10 @@ namespace WPFClient
           if (response.StatusCode == HttpStatusCode.OK)
           {
             var result = await response.Content.ReadAsAsync<IEnumerable<string>>();
-
-            return result;
+            if (result != null)
+            {
+              return result;
+            }
           }
         }
       }
@@ -57,10 +71,13 @@ namespace WPFClient
         throw;
       }
 
-      return null;
+      return new List<string>();
     }
 
-
+    /// <summary>
+    /// Add synonyms to the a Theasurus API
+    /// </summary>
+    /// <param name="synonyms">Synonyms to be added</param>
     public static async Task AddSynonymsAsync(IEnumerable<string> synonyms)
     {
       try
@@ -69,11 +86,6 @@ namespace WPFClient
         {
           if (response.StatusCode == HttpStatusCode.OK)
           {
-            Console.WriteLine("Posted OK");
-          }
-          else
-          {
-            Console.WriteLine(response.StatusCode);
           }
         }
       }

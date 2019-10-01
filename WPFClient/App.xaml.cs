@@ -1,34 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
+﻿using Prism.Ioc;
+using Prism.Unity;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using System.Windows;
+using WPFClient.ViewModels;
+using WPFClient.Views;
 
 namespace WPFClient
 {
   /// <summary>
   /// Interaction logic for App.xaml
   /// </summary>
-  public partial class App : Application
+  public partial class App : PrismApplication
   {
     public static HttpClient Client { get; private set; }
 
-    protected override void OnStartup(StartupEventArgs e)
+    public override void Initialize()
     {
-      base.OnStartup(e);
+      base.Initialize();
       InitializeClient();
-
     }
 
+    /// <summary>
+    /// Initializes the <see cref="HttpClient"/> for the application.
+    /// </summary>
     private static void InitializeClient()
     {
       Client = new HttpClient();
       Client.DefaultRequestHeaders.Accept.Clear();
       Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+    }
+
+    protected override Window CreateShell()
+    {
+      return Container.Resolve<MainWindow>();
+    }
+
+    protected override void RegisterTypes(IContainerRegistry containerRegistry)
+    {
+      containerRegistry.RegisterDialog<HelloWorldDialogView, HelloWorldDialogViewModel>();
     }
   }
 }

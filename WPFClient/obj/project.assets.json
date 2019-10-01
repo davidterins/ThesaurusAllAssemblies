@@ -188,6 +188,22 @@
           "lib/netcoreapp3.0/Prism.dll": {}
         }
       },
+      "Prism.Unity/7.2.0.1367": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.2.0.1367",
+          "Unity.Container": "5.10.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Prism.Unity.Wpf.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Prism.Wpf/7.2.0.1367": {
         "type": "package",
         "dependencies": {
@@ -999,6 +1015,15 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1477,6 +1502,28 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Unity.Abstractions/4.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.10.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "4.1.3"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Unity.Container.dll": {}
+        }
       }
     }
   },
@@ -1714,6 +1761,23 @@
         "lib/netstandard2.0/Prism.xml",
         "prism.core.7.2.0.1367.nupkg.sha512",
         "prism.core.nuspec"
+      ]
+    },
+    "Prism.Unity/7.2.0.1367": {
+      "sha512": "wbLk5GVyhF5FZY7ayhw/NKG1EPW9I15TkKl5Uqz4ZYvAchlX/EatNo/rBA0rJjrVJcQsNjAIo8DR32gRxJ//0g==",
+      "type": "package",
+      "path": "prism.unity/7.2.0.1367",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Unity.Wpf.dll",
+        "lib/net45/Prism.Unity.Wpf.pdb",
+        "lib/net45/Prism.Unity.Wpf.xml",
+        "lib/netcoreapp3.0/Prism.Unity.Wpf.dll",
+        "lib/netcoreapp3.0/Prism.Unity.Wpf.pdb",
+        "lib/netcoreapp3.0/Prism.Unity.Wpf.xml",
+        "prism.unity.7.2.0.1367.nupkg.sha512",
+        "prism.unity.nuspec"
       ]
     },
     "Prism.Wpf/7.2.0.1367": {
@@ -4050,6 +4114,31 @@
         "system.runtime.nuspec"
       ]
     },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Runtime.Extensions/4.3.0": {
       "sha512": "guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
       "type": "package",
@@ -5286,11 +5375,66 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Unity.Abstractions/4.1.3": {
+      "sha512": "Yar2QRlViMGI4Jeyr8qyjb02RvpBW15TOt//eMzESn3VO70v/tPj7XfKDvMnqC3QqFPkK4/7VeuK1mN9DexEiw==",
+      "type": "package",
+      "path": "unity.abstractions/4.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net40/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.pdb",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "unity.abstractions.4.1.3.nupkg.sha512",
+        "unity.abstractions.nuspec"
+      ]
+    },
+    "Unity.Container/5.10.3": {
+      "sha512": "JA18YN+6e60vEOBmrU+Rd3rJaTyRsxD1s4w66moS1BF8BEPw8jt6GjYFKo/SDUdGmbvTfJp/yThETy5nNkmJrg==",
+      "type": "package",
+      "path": "unity.container/5.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Container.dll",
+        "lib/net40/Unity.Container.pdb",
+        "lib/net45/Unity.Container.dll",
+        "lib/net45/Unity.Container.pdb",
+        "lib/net46/Unity.Container.dll",
+        "lib/net46/Unity.Container.pdb",
+        "lib/net47/Unity.Container.dll",
+        "lib/net47/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.pdb",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.pdb",
+        "unity.container.5.10.3.nupkg.sha512",
+        "unity.container.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.AspNet.WebApi.Client >= 5.2.7",
+      "Prism.Unity >= 7.2.0.1367",
       "Prism.Wpf >= 7.2.0.1367",
       "System.Linq >= 4.3.0"
     ]
@@ -5339,6 +5483,10 @@
           "Microsoft.AspNet.WebApi.Client": {
             "target": "Package",
             "version": "[5.2.7, )"
+          },
+          "Prism.Unity": {
+            "target": "Package",
+            "version": "[7.2.0.1367, )"
           },
           "Prism.Wpf": {
             "target": "Package",
